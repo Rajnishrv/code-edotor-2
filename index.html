@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Editor</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- CodeMirror Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <!-- CodeMirror Mode Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/css/css.min.js"></script>
+</head>
+<body>
+    <section class="container">
+        <h1>Live Code Editor</h1>
+        <div class="editor">
+            <div class="left">
+                <label for=""><i class='bx bxl-html5'></i>HTML</label>
+                <div onkeyup="run()" name="" id="html-code" spellcheck="false"></div>
+
+                <label for=""><i class='bx bxl-css3'></i>CSS</label>
+                <div onkeyup="run()" name="" id="css-code" spellcheck="false"></div>
+
+                <label for=""><i class='bx bxl-javascript'></i>JavaScript</label>
+                <div onkeyup="run()" name="" id="js-code" spellcheck="false"></div>
+
+            </div>
+
+            <div class="right">
+                <label for=""><i class='bx bx-play'></i>Output</label>
+                <iframe src="" id="output"></iframe>
+            </div>
+        </div>
+    </section>
+    <script src="script/script.js"></script>
+</body>
+</html>
